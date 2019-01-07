@@ -5,3 +5,11 @@ desc 'starts a console'
 task :console do
   Pry.start
 end
+
+# desc 'Resets the database'
+# task :reset do
+#   ENV['STEP'] = '100' # <------ declare your environment variable
+#   Rake::Task["db:rollback"].invoke
+#   Rake::Task["db:migrate"].invoke
+#   Rake::Task["db:seed"].invoke
+# end
